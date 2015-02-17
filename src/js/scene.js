@@ -3,13 +3,13 @@
  */
 var Raphael = require('raphael');
 
-var SURFACE_ID = 'sceen';
+var SURFACE_ID = 'scene';
 
 function SceenView() {
-    this.sceen = Raphael.paper(SURFACE_ID, 600, 400);
+    console.log('Initializing Raphael');
+
+    this.sceen = Raphael(SURFACE_ID, 600, 400);
     this.sceen.canvas.style.backgroundColor = '#000';
 }
-
-
 
 module.exports = SceenView;
